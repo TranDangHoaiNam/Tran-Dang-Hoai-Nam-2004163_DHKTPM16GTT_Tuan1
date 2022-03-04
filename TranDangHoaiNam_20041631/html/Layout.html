@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: auto;
+            padding: 0px;
+        }
+        body{
+             
+            background-color: aliceblue;
+        }
+        .wrapper{
+            height: 700px;
+            width: 1089px;
+        }
+
+        header{
+            height: 150px;
+            width: 1089px;
+            background-image: url(../Image/anh3.jpg);
+        }
+        nav{
+            height: 50px;
+            width: 1089px;
+            background-color: bisque;
+            line-height: 50px;
+        }
+        .content{
+            height: 400px;
+            width: 1089px;
+            background-color: rgb(48, 90, 128);
+        }
+        aside
+        {
+            height: 515px;
+            width: 1089px;
+            background-image: url(../Image/anh1.jpg); 
+            float: left;
+        }
+        
+        footer{
+            height: 25px;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+        }
+        .menu li {
+            height: 100%;
+            width: 200px;
+            float: left;
+            list-style: none;
+            text-indent: 15px;
+            position: relative;
+            background-color: bisque;
+            
+        }
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            color: blue;
+        }
+        menu li:hover{
+            background-color: blue;
+        }
+        li:hover>a{
+            color: chartreuse;
+            font-style: italic;
+            font-weight: bold;
+        }
+        nav span #email{
+            padding: 3px;
+            
+        }
+        nav span #btn{
+            padding: 3px;
+            border-radius: 15%;
+            background-color: aqua;
+        }
+        
+        .clear{
+            clear: both;
+        }
+        .menu li .submenu{
+            position: absolute;
+            display: none;
+        }
+        .menu li:hover .submenu{
+            display: block;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div>
+        <header></header>
+            <nav>
+                <ul class="menu">
+                    <li><a href="https://24h.com.vn">Home</a></li>
+                    <li><a href="">Sever</a></li>
+                    <li><a href="">Contact</a>
+                        <ul class="submenu">
+                            <li><a href="">internet</a></li>
+                            <li><a href="">aaaaaaa</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../html/ChuPage.html">Tên chủ page</a></li>
+                    <form action="">
+                        <span>
+                            <label for="dn">Email</label>
+                            <input type="email" name="txt email" id="email" placeholder="nha Emap" required>
+                            <input type="submit" value="singin" id="btn">
+                        </span>
+                    </form>
+
+                </ul>
+            </nav>
+            <div class="aaaaaaa"></div>
+            <div class="content">
+                <aside>
+
+
+                </aside>
+                <section>
+
+
+                </section>
+            </div>
+            <div class="clear"></div>
+            <footer></footer>
+    </div>
+</body>
+</html>
