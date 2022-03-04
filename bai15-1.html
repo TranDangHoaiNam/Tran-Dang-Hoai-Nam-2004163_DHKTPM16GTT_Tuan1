@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=text]
+        {
+            width: 100px;
+            -webkit-transition: width .35s ease-in-out;
+            transition: width .35s ease-in-out;
+        }
+        input[type=text]:focus
+        {
+            width: 250px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Us</h1>
+        <fieldset>
+            <legend>Your message:</legend>
+            <table>
+                <tr>
+                    <td><label for="emailFrom">To</label></td>
+                    <td><input type="text" name="txtTo" readonly="readonly" id="emailTo"size ="20" value="Exxxxxxxxx"></td>
+                </tr>
+                
+                <tr>
+                    <td><label for="emailFrom">Your email</label></td>
+                    <td><input type="text" name="txtTo" id="emailTo"size ="20" tabindex="1" maxlength="250" ></td>
+                </tr>
+
+                <tr>
+                    <td><label for="emailFrom">Your email</label></td>
+                    <td><textarea name ="txtbody" id="emailbody" cols="50"rows="10"tabindex="2"></textarea></td>
+                </tr>
+
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>How you found us</legend>
+            <table>
+                <tr>
+                    <td><label for="emailFrom">How did you hear of us?</label></td>
+                    <td><select>
+                        
+                        <option value="0">Goole</option>
+                        <option value="1">Youtube</option>
+                        <option value="2">Facebook</option>
+                        <option value="3">Yahho</option>
+                        <option value="4">Intasram</option>
+                     </select></td>  
+                </tr>
+
+
+
+                <tr>
+                    <td><label for="emailFrom">Newslester</label></td>
+                    <td><input type="checkbox" name="" value="" checked="checked" />Ensure this  box is checked if you would like to receive email update</td>
+                    
+                </tr>
+            </table>
+        </fieldset>
+        <tr>
+            <input type="button" name="" value="Send message" />
+        </tr>
+</body>
+</html>
